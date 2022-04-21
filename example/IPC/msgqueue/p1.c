@@ -61,6 +61,7 @@ int main(void)
 			return -2;
 		}
 		
+		//把消息发送到队列
 		if(msgsnd(msqid, &msg_to_send, 100, 0) < 0)
 		{
 			perror("send msg to queue fail");
